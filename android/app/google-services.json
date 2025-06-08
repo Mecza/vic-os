@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "744977127442",
+    "project_id": "zlecam-5224d",
+    "storage_bucket": "zlecam-5224d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744977127442:android:bc0db31da834a8a0ade0cb",
+        "android_client_info": {
+          "package_name": "com.example.job_deal_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1oiiBMW4lh2OlDg1Tc6wWINAFHcotB6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744977127442:android:63b59426b3be6a8fade0cb",
+        "android_client_info": {
+          "package_name": "com.example.untitled3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1oiiBMW4lh2OlDg1Tc6wWINAFHcotB6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
